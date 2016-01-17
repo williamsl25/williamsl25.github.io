@@ -1,0 +1,489 @@
+*{
+  -webkit-box-sizing:border-box;
+     -moz-box-sizing:border-box;
+          box-sizing:border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: inherit;
+  list-style-position: inside;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Basic Styles for the page */
+html{
+  background:#CCC;
+  text-align: center;
+  height:100%;
+  font-size: 20px;
+
+  font-family: 'Roboto Condensed', sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+}
+body{
+  height:100%;
+  color:white;
+  /*text-shadow:1px 1px 0 #000;*/
+}
+
+a:link, a:visited{
+  color:white;
+  text-decoration: none;
+}
+a:active{
+  color:#3F5263;
+}
+button.btn.resume:visited {
+  color: white;
+}
+a.link {
+  color: white;
+}
+a:hover{
+  text-decoration: underline;
+}
+a.btn {
+  width:300px;
+  height:60px;
+  border: 3px solid #CCCCFF;
+  font-family: inherit;
+  font-size: inherit;
+  text-decoration: none;
+  color: white ;
+  background: transparent;
+  cursor: pointer;
+  padding: .4rem 3rem;
+  display:inline-block;
+  text-align:center;
+  margin:0;
+  text-transform: lowercase;
+  letter-spacing: 2px;
+  outline: none;
+  position: relative;
+  border-radius:2px;
+  -webkit-transition:all 0.1s ease-in-out;
+     -moz-transition:all 0.1s ease-in-out;
+          transition:all 0.1s ease-in-out;
+}
+a.btn:hover{
+  background: white;
+  color: #3F5263;
+}
+
+.bottom .content a:hover{
+  background: black;
+  color: #3F5263;
+}
+.content {
+ font-family: 'Dosis', sans-serif;
+}
+.caption {
+  font-size: 25px;
+  text-align: center;
+}
+
+/* Text Styles for the page */
+h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin-bottom:20px;
+}
+h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  line-height: 4rem;
+  /*margin-bottom:20px;*/
+}
+h3 {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  line-height: 2.5rem;
+  margin-bottom:20px;
+}
+p {
+  font-size: 1rem;
+  line-height: 2rem;
+  text-shadow:none;
+  width: 95%;
+}
+blockquote {
+  font-size: 1.2rem;
+}
+pre {
+  font-size: 0.9rem;
+}
+
+.aboutMe{
+  width: 90%;
+}
+.content{
+  display:block;
+  padding:10px 50px;
+  width:100%;
+  max-width: 960px;
+  margin:0 auto;
+  overflow:hidden;
+}
+.content img{
+  width:25%;
+  height:auto;
+  float:left;
+  display:inline;
+  padding:10px;
+}
+
+/* Section Styles for the page */
+section{
+  background:white;
+  padding:0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.wrapper{
+  color:#000;
+  text-shadow:none;
+}
+
+.hero{
+  background:url(https://ununsplash.imgix.net/uploads/1411115362846f0257a48/3f4eb74a?fit=crop&fm=jpg&h=700&q=75&w=1050);
+  background-size: cover;
+  height: 75%;
+    /*max-height:100%;*/
+    overflow: auto;
+}
+.hero .content{
+  margin-top:13%;
+}
+.middle{
+  background:url(images/tock.jpg);
+  background-size: cover;
+  height: 352px;
+  width: auto;
+
+}
+.lower{
+  background:url(images/resume_pic.jpg) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 235px;
+}
+.bottom{
+  background:#26292C;
+}
+
+.overlay{
+  position: relative;
+    z-index: 1;
+}
+.overlay:after{
+  background:rgba(0, 0, 0, 0.5);
+  content: "";
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+/*header*/
+
+.header {
+  position: fixed;
+  width: 100%;
+  background: #222;
+  z-index: 10;
+}
+.header .navbar-brand {
+  font-weight: 400;
+}
+.header .navbar {
+  margin: 0;
+  border: none;
+}
+
+
+@media (min-width: 300px) {
+  .header .navbar-brand {
+    padding-left: 0;
+  }
+  .navbar-nav {
+    float: right;
+  }
+}
+.modal-dialog {
+    width: 780px;
+  }
+#myModalLabel{
+  font-family: 'Dosis', sans-serif;
+  font-size: 3.0rem;
+}
+#nav a {
+  margin-top: 50px;
+  color:black;
+  transition: all 0.1s ease-in-out;;
+}
+#resume-body {
+  opacity: .8;
+}
+#resume-body .row{
+  padding-top: 20px;
+}
+
+#resume-body p {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-style: normal;
+  font-size: 1em;
+}
+
+#resume-nav > .row > div {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#profile {
+  color: black;
+  text-align: left;
+  width: 100%;
+}
+#profile a{
+  color: black;}
+#skills {
+  color: black;
+  text-align: left;
+  width: 100%;
+}
+#skills a{
+  color: black;
+  font-size: 14px;
+transition: all 0.1s ease-in-out;
+}
+
+#education {
+  color: black;
+  text-align: left;
+  width: 100%;
+}
+#education a{
+  color: black;
+  font-size: 14px;
+transition: all 0.1s ease-in-out;
+}
+
+#prof-experience {
+  color: black;
+  text-align: left;
+  width: 100%;
+  font-size: 18px;
+}
+#prof-experience a{
+  color: black;
+  font-size: 14px;
+  transition: all 0.1s ease-in-out;
+}
+#vol-experience {
+  color: black;
+  text-align: left;
+  width: 100%;
+  font-size: 18px;
+}
+#vol-experience a{
+  color: black;
+  font-size: 14px;
+  transition: all 0.1s ease-in-out;
+}
+
+#resume-body li{
+  font:
+  color: black;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  text-align: justify;
+  line-height: 22px;
+}
+
+.col-sm-3{
+  font-size: .8rem;
+}
+.col-md-3 a{
+  color: blue;
+}
+.col-md-3 img{
+  height: 215px;
+  width:215px;
+}
+.img-circle {
+  width: 200px;
+  height: 150px;
+  float: left;
+  padding: 15px, 5px, 15px, 5px;
+  margin: 5px;;
+}
+
+.resume{
+  width: 300px;
+  height: 60px;
+  border: 3px solid #CCCCFF;
+  font-family: inherit;
+  font-size: inherit;
+  text-decoration: none;
+  color: white;
+  background: transparent;
+  cursor: pointer;
+  padding: .4rem 3rem;
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+  text-transform: lowercase;
+  letter-spacing: 2px;
+  outline: none;
+  position: relative;
+  border-radius: 2px;
+  transition: all 0.1s ease-in-out;
+}
+.resume:hover{
+  background-color: white;
+  color: #5a5a5a;
+}
+.resume:visited{
+  background-color: transparent;
+  color: white;
+}
+.btn.resume {
+  padding-top: 12px;
+}
+.resumeTitle {
+  color: black;
+  letter-spacing: 2px;;
+}
+.resumeTitle {
+  color: black;
+  letter-spacing: 3px;
+  font-size: 1.5em;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.github, .email {
+  color: black;
+  font-size: 1em;
+}
+address {
+  letter-spacing: 3px;
+  font-family: 'Dosis', sans-serif;
+}
+.lead{
+  text-align: justify;
+}
+a.projectLink{
+  color: #777;
+}
+.featurette{
+  text-align: justify;
+}
+.tech {
+  text-decoration: underline;
+}
+.content img {
+  width: 305px;
+  height: 305px;
+}
+.featurette-divider {
+    margin: 35px;
+  }
+.featurette-heading {
+    margin-top: 95px;
+}
+@media (max-width: 768px) {
+  .pediaApp {
+    width: 100%;
+  }
+}
+  /*@media (max-width: 768px) {
+    #bg_container  {
+      width: 100%;
+    }
+}*/
+.pediaContainer {
+  width:100%;
+      margin-top: 95px;
+}
+.bg_container {
+  height:640px;
+  overflow:hidden;
+  width: 45%;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 5px;
+ }
+img.bg {
+  border: solid black;
+  box-shadow: 10px 10px 5px #888888;
+  border-radius: 25px;
+  border: 4px solid #C0C0C0;
+  padding: 20px;
+  width: 100%;
+  height: 600px;
+ }
+ .pediaApp {
+   margin: 5;
+   display: inline-block;
+   padding-left: 25px;
+   width: 51%;
+   text-align: justify;
+   vertical-align: top;
+ }
+ .pediaAppHead {
+     margin-top: 25px;
+ }
+ .furrface{
+    display: inline-block;
+ }
+.projectImg.furrface{
+     width: 40px;
+     margin-right: 55px;
+
+ }
