@@ -7,6 +7,9 @@ body {
   color: #5a5a5a;
 }
 
+a.visited{
+color:#205081;
+}
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
