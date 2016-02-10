@@ -197,7 +197,7 @@ section{
 .hero{
   background:url(https://ununsplash.imgix.net/uploads/1411115362846f0257a48/3f4eb74a?fit=crop&fm=jpg&h=700&q=75&w=1050);
   background-size: cover;
-  height: 75%;
+  height: 60%;
     /*max-height:100%;*/
     overflow: auto;
 }
