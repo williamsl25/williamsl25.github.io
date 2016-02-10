@@ -207,7 +207,7 @@ section{
 .middle{
   background:url(images/tock.jpg);
   background-size: cover;
-  height: 352px;
+  height: 400px;
   width: auto;
 
 }
@@ -414,7 +414,7 @@ transition: all 0.1s ease-in-out;
   font-size: 1.5em;
   font-family: 'Roboto Condensed', sans-serif;
 }
-.github, .email {
+.github, .email, .linkedin {
   color: black;
   font-size: 1em;
 }
